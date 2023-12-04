@@ -22,9 +22,9 @@ const getPhotos = (data) => {
   data.map((item, key) => {
     $('.data').append(`
     <tr>
-    <td >${key + 1}</td>
-    <td >${item.title}</td>
-    <td ><div class="btnBox"><a class="btnImg" onclick="openModall('${item.url}')"><img class="rasm" src="${item.thumbnailUrl}"></a></div></td>
+    <td>${key + 1}</td>
+    <td>${item.title}</td>
+    <td><div class="btnBox"><a class="btnImg" onclick="openModall('${item.url}')"><img class="rasm" src="${item.thumbnailUrl}"></a></div></td>
     </tr>`)
   });
 };
